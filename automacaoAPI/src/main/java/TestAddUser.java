@@ -15,7 +15,7 @@ public class TestAddUser {
 
 	@Before
 	public void conectarBanco() throws Exception {
-		conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/banco_teste_automacao", "root01", "root");
+		conn = DriverManager.getConnection("jdbc:mysql://localhost:0000/banco_teste_automacao", "000000", "0000");
 	}
 
 	@Test
