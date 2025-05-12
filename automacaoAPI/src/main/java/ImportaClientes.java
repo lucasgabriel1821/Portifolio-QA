@@ -1,6 +1,5 @@
 /*
- * Dado lista de clientes https://n8n.apptrix.app/webhook/a1841391-56ad-4a75-
-bfeb-e005b673c756
+ * Dado lista de clientes https://oururltest
 Quando crio uma tabela no banco de dados
 Então populo a tabela de acordo com o retorno da API
  */
