@@ -15,8 +15,8 @@ public class AddUserExistent {
 	@Test
 	public void UsuarioExistente() {
 		try {
-			Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/banco_teste_automacao", "root01",
-					"root");
+			Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:0000/banco_teste_automacao", "000000",
+					"0000");
 			Statement stmt = conn.createStatement();
 			ResultSet rs = stmt.executeQuery("SELECT COUNT(*) FROM usuarios");
 			rs.next();
