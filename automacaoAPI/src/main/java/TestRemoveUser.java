@@ -19,9 +19,9 @@ public class TestRemoveUser {
 	String idDoUsuario = "23423532";
 
 	public Connection conectarBanco() throws Exception {
-		String url = "jdbc:mysql://localhost:3306/banco_teste_automacao";
-		String usuario = "root01";
-		String senha = "root";
+		String url = "jdbc:mysql://localhost:0000/banco_teste_automacao";
+		String usuario = "000000";
+		String senha = "0000";
 		return DriverManager.getConnection(url, usuario, senha);
 	}
 
