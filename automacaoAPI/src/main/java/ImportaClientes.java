@@ -19,12 +19,12 @@ public class ImportaClientes {
 		try {
 			HttpClient client = HttpClient.newHttpClient();
 			HttpRequest request = HttpRequest.newBuilder()
-					.uri(URI.create("https://n8n.apptrix.app/webhook/a1841391-56ad-4a75-bfeb-e005b673c756")).build();
+					.uri(URI.create("https://ourtesturl")).build();
 
 			HttpResponse<String> response = client.send(request, HttpResponse.BodyHandlers.ofString());
 
-			Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/banco_teste_automacao", "root01",
-					"root");
+			Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:0000/banco_teste_automacao", "000000",
+					"0000");
 			JSONArray clientes = new JSONArray(response.body());
 			String inserirSQL = "INSERT IGNORE INTO usuarios (id, nome, email, username, password) VALUES (?, ?, ?, ?, ?)";
 			PreparedStatement ps = conn.prepareStatement(inserirSQL);
